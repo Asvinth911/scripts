@@ -1,3 +1,4 @@
-sudo nano /etc/apt/sources.list.d/microsoft-packages.list
-deb [arch=amd64] https://packages.microsoft.com/ubuntu/20.04/prod bionic main
+wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+sudo apt-get update
 sudo apt-get install -y dotnet-sdk-7.0
